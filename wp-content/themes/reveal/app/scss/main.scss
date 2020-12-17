@@ -1,0 +1,94 @@
+@import "vars";
+@import "fonts";
+@import "libs";
+
+::placeholder {
+	color: #666;
+}
+
+::selection {
+	background-color: $accent;
+	color: #fff;
+}
+
+.clearfix::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+body {
+	font-size: 16px;
+	min-width: 320px;
+	position: relative;
+	line-height: 1.65;
+	font-family: $default-font;
+	overflow-x: hidden;
+	color: $text;
+	padding-top: 119px;
+	@media only screen and (min-width: 1024px) and (max-width: 1600px) {
+		zoom: 0.8;
+	}
+	@media (max-width: 1024px) {
+		padding-top: 72px;
+	}
+	@media (max-width: 768px) {
+		padding-top: 60px;
+	}
+	.product {
+		&:last-child {
+			padding-bottom: 120px;
+		}
+	}
+	input, textarea {
+		border: #666 1px solid;
+		outline: none;
+		&:focus:required:invalid {
+			border-color: red;
+		}
+		&:required:valid {
+			border-color: green;
+		}
+	}
+}
+
+.img-responsive {
+	display: block;
+	max-width: 100%;
+	height: auto;
+	&.img-width {
+		width: 100%;
+	}
+}
+
+.text-center {
+	text-align: center;
+}
+
+b, strong {
+	font-weight: bold;
+}
+
+.container {
+	width: 100%;
+	max-width: 1640px;
+	margin: auto;
+	z-index: 1;
+	position: relative;
+	padding: 0 15px;
+	@media (max-width: 1024px) {
+		padding: 0 25px;
+	}
+	@media (max-width: 768px) {
+		padding: 0 15px;
+	}
+}
+.row {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+@import "revealAll";
+@import "newOrchidProduct";
+@import "OrchidContentLanding";

@@ -1,0 +1,17 @@
+@import "_mixins/font-face";
+
+@include font-face("Gotham", "../fonts/Gotham/Gotham-Black", 900);
+
+@include font-face("Gotham", "../fonts/Gotham/Gotham-Bold", 800);
+
+@include font-face("GothamBook", "../fonts/Gotham/Gotham-Book", normal);
+
+@include font-face("Gotham", "../fonts/Gotham/Gotham-Book", normal);
+
+@include font-face("Gotham", "../fonts/Gotham/GothamPro-Think", 100);
+
+@include font-face("Gotham", "../fonts/Gotham/GothamPro-Medium", 500);
+
+@include font-face("Gotham", "../fonts/Gotham/GothamPro-Light", 200);
+
+
