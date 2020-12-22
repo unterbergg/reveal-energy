@@ -95,7 +95,7 @@
 
 </head>
 
-<body>
+<body class="global">
 <?php
     $parentPage = get_post_field( 'post_name', $post->post_parent );
     $currentPage = get_post_field( 'post_name', $post->id );
