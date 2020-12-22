@@ -95,37 +95,24 @@
 
 </head>
 
-<body class="global">
+<body class="body-landing">
 <?php
     $parentPage = get_post_field( 'post_name', $post->post_parent );
     $currentPage = get_post_field( 'post_name', $post->id );
     $currentPageType = get_post_field('post_type', $post->id);
 ?>
 
-<header class="header header-event">
+<header class="header">
     <div class="mob_test"></div>
     <div class="container">
         <div class="row row--spacebetween">
             <div class="header__logo">
                 <a href="/"><img src="<?php echo get_template_directory_uri(); ?>/app/img/logo.svg" alt=""></a>
             </div>
+            <div class="header__content">
+                <a class="button" href="/contact/">Contact Us</a>
+            </div>
         </div>
     </div>
 </header>
-<script>
-    // var btn = document.querySelector('.menu-search-item');
-    // btn.onclick = function(e) {
-    //     var element = document.querySelector("#search-desctop");
-    //     if(element.classList.contains("show-block")) {
-    //         element.classList.remove("show-block");
-    //         btn.classList.remove("menu-search-active");
-    //         document.querySelector('.menu-search-item').querySelector('.far').classList.add('fa-search');
-    //         document.querySelector('.menu-search-item').querySelector('.far').classList.remove('fa-times-circle');
-    //     } else {
-    //         element.classList.add("show-block");
-    //         btn.classList.add("menu-search-active");
-    //         document.querySelector('.menu-search-item').querySelector('.far').classList.remove('fa-search');
-    //         document.querySelector('.menu-search-item').querySelector('.far').classList.add('fa-times-circle');
-    //     }
-    // }
-</script>
+

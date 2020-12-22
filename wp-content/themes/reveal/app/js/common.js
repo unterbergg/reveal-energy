@@ -223,3 +223,15 @@ $(document).ready(function(){
         nextArrow: '<button id="next" type="button" class="owl-next-d"><i class="fas fa-arrow-right"></i></button>'
     });
 });
+$(document).ready(function(){
+    $('.reviews-slider').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        dots: false,
+        focusOnSelect: true,
+        infinite: true,
+        appendArrows: $('.reviews-arrow'),
+        prevArrow: '<button id="prev" type="button" class="owl-prev-d"><i class="fas fa-arrow-left"></i></button>',
+        nextArrow: '<button id="next" type="button" class="owl-next-d"><i class="fas fa-arrow-right"></i></button>'
+    });
+});
