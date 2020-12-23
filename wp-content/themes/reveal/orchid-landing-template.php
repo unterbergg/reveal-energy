@@ -13,15 +13,22 @@ get_header('landing');?>
             <div class="row">
                 <div class="info-wrap">
                     <div class="info">
-                        <div class="title">Open interpretation platform that supports improved</div>
-                        <div class="text">Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Oilfield digitalization technologies and tools enable Oil and Gas companies to collect</div>
+                        <div class="title">
+                            <?php echo get_field('mscrn__title');?>
+                        </div>
+                        <div class="text">
+                            <?php echo get_field('mscrn__description');?>
+                        </div>
                     </div>
-                    <div class="list">
-                        <div class="item">Cras dapibus</div>
-                        <div class="item">Aenean vulputate eleifend tellus</div>
-                        <div class="item">Aenean leo ligula</div>
-                        <div class="item">Maecenas nec odio et ante</div>
-                    </div>
+                    <?php if(get_field('mscrn__points')):?>
+                        <div class="list">
+                            <?php foreach (get_field('mscrn__points') as $item):?>
+                                <div class="item">
+                                    <?php echo $item['text'];?>
+                                </div>
+                            <?php endforeach;?>
+                        </div>
+                    <?php endif;?>
                 </div>
                 <div class="form-wrap">
                     <div class="title">Try the product now</div>
@@ -58,132 +65,125 @@ get_header('landing');?>
             </a>
         </div>
     </section>
-    <section id="landing-s2" class="landing-page-companies">
-        <div class="container">
-            <div class="row">
-                <div class="text">Companies using the product:</div>
-                <div class="logo-wrap">
-                    <div class="logo"><img src="<?php echo get_template_directory_uri();?>/app/img/content-landing-page/1.png"></div>
-                    <div class="logo"><img src="<?php echo get_template_directory_uri();?>/app/img/content-landing-page/2.png"></div>
-                    <div class="logo"><img src="<?php echo get_template_directory_uri();?>/app/img/content-landing-page/3.png"></div>
-                    <div class="logo"><img src="<?php echo get_template_directory_uri();?>/app/img/content-landing-page/4.png"></div>
+
+    <?php if(get_field('clients__clients') && get_field('clients__text')):?>
+        <section id="landing-s2" class="landing-page-companies">
+            <div class="container">
+                <div class="row">
+                    <div class="text">
+                        <?php echo get_field('clients__text');?>
+                    </div>
+                    <div class="logo-wrap">
+                        <?php foreach(get_field('clients__clients') as $client):?>
+                            <div class="logo">
+                                <img src="<?php echo $client['logo']['url'];?>" alt="<?php echo $client['logo']['alt'];
+                                ?>">
+                            </div>
+                        <?php endforeach;?>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <section id="landing-s3" class="landing-page-icons">
-        <div class="container">
-            <div class="row">
-                <div class="text">What’s Covered:</div>
-            </div>
-            <div class="icons-wrapper">
-                <div class="item">
-                    <div class="icon">
-                        <img src="<?php echo get_template_directory_uri();?>/app/img/content-landing-page/AccessIcon.png">
+        </section>
+    <?php endif;?>
+    <?php if(get_field('covered__items')): ?>
+        <section id="landing-s3" class="landing-page-icons">
+            <div class="container">
+                <div class="row">
+                    <div class="text">
+                        <?php echo get_field('covered__title');?>
                     </div>
-                    <div class="text">Cras dapibus</div>
                 </div>
-                <div class="item">
-                    <div class="icon">
-                        <img src="<?php echo get_template_directory_uri();?>/app/img/content-landing-page/oil-logo.png">
-                    </div>
-                    <div class="text">Cras dapibus</div>
-                </div>
-                <div class="item">
-                    <div class="icon">
-                        <img src="<?php echo get_template_directory_uri();?>/app/img/content-landing-page/AccessIcon.png">
-                    </div>
-                    <div class="text">Cras dapibus</div>
-                </div>
-                <div class="item">
-                    <div class="icon">
-                        <img src="<?php echo get_template_directory_uri();?>/app/img/content-landing-page/AccessIcon.png">
-                    </div>
-                    <div class="text">Cras dapibus</div>
-                </div>
-                <div class="item">
-                    <div class="icon">
-                        <img src="<?php echo get_template_directory_uri();?>/app/img/content-landing-page/AccessIcon.png">
-                    </div>
-                    <div class="text">Cras dapibus</div>
-                </div>
-                <div class="item">
-                    <div class="icon">
-                        <img src="<?php echo get_template_directory_uri();?>/app/img/content-landing-page/AccessIcon.png">
-                    </div>
-                    <div class="text">Cras dapibus</div>
-                </div>
-                <div class="item">
-                    <div class="icon">
-                        <img src="<?php echo get_template_directory_uri();?>/app/img/content-landing-page/oil-logo.png">
-                    </div>
-                    <div class="text">Cras dapibus</div>
-                </div>
-                <div class="item">
-                    <div class="icon">
-                        <img src="<?php echo get_template_directory_uri();?>/app/img/content-landing-page/oil-logo.png">
-                    </div>
-                    <div class="text">Cras dapibus</div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="landing-s4" class="landing-page-reviews">
-        <div class="container">
-            <div class="row">
-                <div class="text">Feedback from our partners</div>
-            </div>
-            <div class="reviews-slider-wrap">
-                <div class="reviews-slider">
-                    <div class="review">
-                        <div class="text-wrap">
-                            <div class="title">Type something</div>
-                            <div class="text">Oilfield digitalization technologies and tools enable Oil and Gas companies to collect more field data on well completions and reservoir conditions. The volume of data collected is creating an situation that is complicating the ability of human engineers to analyze and understand this volume of information. These Engineers are tasked with improving production and completion efficiency based on all the available well and field data, but the tools available to do so in a comprehensive fashion are limited. Some examples of commentary we at Reveal hear from these engineers as they initiate and perform studies to extract knowledge from their data universe:</div>
+                <div class="icons-wrapper">
+                    <?php foreach(get_field('covered__items') as $item): ?>
+                        <div class="item">
+                            <div class="icon">
+                                <?php if($item['image']): ?>
+                                    <img src="<?php echo $item['image']['url'];?>"
+                                         alt="<?php echo $item['image']['alt'];?>"
+                                    />
+                                <?php else: ?>
+                                    <img src="<?php echo get_template_directory_uri();?>/app/img/content-landing-page/AccessIcon.png"
+                                         alt=""
+                                    />
+                                <?php endif; ?>
+                            </div>
+                            <div class="text"><?php echo $item['title'];?></div>
                         </div>
-                        <div class="about-wrap">
-                            <div class="photo"><img src="https://i.pinimg.com/originals/28/61/41/2861419363eb4a02c2fb0cacbce5f87e.jpg"></div>
-                            <div class="name">Alice Delan</div>
-                            <div class="position">CEO Knauf</div>
-                        </div>
-                    </div>
-                    <div class="review">
-                        <div class="text-wrap">
-                            <div class="title">Type something</div>
-                            <div class="text">Oilfield digitalization technologies and tools enable Oil and Gas companies to collect more field data on well completions and reservoir conditions. The volume of data collected is creating an situation that is.Oilfield digitalization technologies and tools enable Oil and Gas companies to collect more field data on well completions and reservoir conditions. The volume of data collected is creating an situation that is </div>
-                        </div>
-                        <div class="about-wrap">
-                            <div class="photo"><img src="https://vipstory.net/wp-content/uploads/2019/08/1565096618_14.jpg"></div>
-                            <div class="name">Alice Delan</div>
-                            <div class="position">CEO Knauf</div>
-                        </div>
-                    </div>
-                    <div class="review">
-                        <div class="text-wrap">
-                            <div class="title">Type something</div>
-                            <div class="text">Oilfield digitalization technologies and tools enable Oil and Gas companies to collect more field data on well completions and reservoir conditions. The volume of data collected is creating an situation that is complicating the ability of human engineers to analyze and understand this volume of information. These Engineers are tasked with improving production and completion efficiency based on all the available well and field data, but the tools available to do so in a comprehensive fashion are limited. Some examples of commentary we at Reveal hear from these engineers as they initiate and perform studies to extract knowledge from their data universe:</div>
-                        </div>
-                        <div class="about-wrap">
-                            <div class="photo"><img src="https://kubnews.ru/upload/resize_cache/iblock/994/800_533_2/99475ea7123c9d8229f5674d202aa761.jpg"></div>
-                            <div class="name">Elon Reeve Musk</div>
-                            <div class="position">Engineer</div>
-                        </div>
-                    </div>
+                    <?php endforeach;?>
                 </div>
-                <div class="reviews-arrow"></div>
             </div>
-        </div>
-    </section>
-    <section id="landing-s5" class="landing-page-demo">
-        <div class="container">
-            <div class="row">
-                <div class="text">The critical insight has been to focus on human factors</div>
-                <a class="button" href="#">Get a Demo</a>
+        </section>
+    <?php endif;?>
+    <?php if(get_field('reviews')): ?>
+        <section id="landing-s4" class="landing-page-reviews">
+            <div class="container">
+                <div class="row">
+                    <div class="text">Feedback from our partners</div>
+                </div>
+                <div class="reviews-slider-wrap">
+                    <div class="reviews-slider">
+                        <?php foreach(get_field('reviews') as $review):?>
+                            <div class="review">
+                            <div class="text-wrap">
+                                <div class="title">
+                                    <?php echo $review['title'];?>
+                                </div>
+                                <div class="text">
+                                    <?php echo $review['text'];?>
+                                </div>
+                            </div>
+                            <div class="about-wrap">
+                                <div class="photo">
+                                    <?php if($review['partner']['image']):?>
+                                        <img src="<?php echo $review['partner']['image']['url'];?>"
+                                             alt="<?php echo $review['partner']['image']['alt'];?>">
+                                    <?php else:?>
+                                        <!--TODO:ЗАГЛУШКУ-->
+                                        <img src="https://i.pinimg.com/originals/28/61/41/2861419363eb4a02c2fb0cacbce5f87e.jpg">
+                                    <?php endif;?>
+                                </div>
+                                <div class="name">
+                                    <?php echo $review['partner']['name'];?>
+                                </div>
+                                <div class="position">
+                                    <?php echo $review['partner']['position'];?>
+                                </div>
+                            </div>
+                        </div>
+                        <?php endforeach;?>
+                    </div>
+                    <div class="reviews-arrow"></div>
+                </div>
             </div>
-            <div class="row">
-                <div class="img"><img src="https://freebornaiden.com/wp-content/uploads/2018/02/maxresdefault-1170x658.jpg"/></div>
+        </section>
+    <?php endif; ?>
+    <?php if(get_field('get__title') || get_field('get__button') || get_field('get__image')): ?>
+        <section id="landing-s5" class="landing-page-demo">
+            <div class="container">
+                <div class="row">
+                    <?php if(get_field('get__title')):?>
+                        <div class="text">
+                            <?php echo get_field('get__title');?>
+                        </div>
+                    <?php endif; ?>
+                    <?php if(get_field('get__button')):?>
+                        <a class="button" href="<?php echo get_field('get__button')['link'];?>">
+                            <?php echo get_field('get__button')['text'];?>
+                        </a>
+                    <?php endif; ?>
+                </div>
+                <?php if(get_field('get__image')):?>
+                    <div class="row">
+                        <div class="img">
+                            <img src="<?php echo get_field('get__image')['url'];?>"
+                                 alt="<?php echo get_field('get__image')['alt'];?>"
+                            />
+                        </div>
+                    </div>
+                <?php endif; ?>
             </div>
-        </div>
-    </section>
+        </section>
+    <?php endif; ?>
 </div>
 
 <?php get_footer('landing'); ?>
