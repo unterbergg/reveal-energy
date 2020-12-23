@@ -176,14 +176,14 @@ get_header('landing');?>
     <section id="landing-s5" class="landing-page-demo">
         <div class="container">
             <div class="row">
-                <div class="text">Feedback from our partners</div>
+                <div class="text">The critical insight has been to focus on human factors</div>
                 <a class="button" href="#">Get a Demo</a>
             </div>
             <div class="row">
-                <div class="img"><img src="<?php echo get_template_directory_uri();?>/app/img/content-landing-page/oil-logo.png"/></div>
+                <div class="img"><img src="https://freebornaiden.com/wp-content/uploads/2018/02/maxresdefault-1170x658.jpg"/></div>
             </div>
         </div>
     </section>
 </div>
 
-<?php get_footer(); ?>
+<?php get_footer('landing'); ?>

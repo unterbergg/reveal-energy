@@ -23,9 +23,29 @@ body.body-landing {
       border-color: green;
     }
   }
+  footer {
+    padding: 35px 0 35px 0;
+  }
   .header {
     padding: 22px 60px;
+    @media (max-width: 1024px) {
+      padding: 8px 24px;
+      height: 72px;
+    }
+    @media (max-width: 768px) {
+      padding: 10px 16px;
+      height: 60px;
+    }
     .header__logo{
+      @media (max-width: 768px) {
+        padding: 0;
+        position: absolute;
+        top: 0;
+        left: 16px;
+        -webkit-transform: none;
+        -ms-transform: translate(-50%,-50%);
+        transform: none;
+      }
       a{
         img{
           height: 56px;
@@ -33,9 +53,27 @@ body.body-landing {
       }
     }
     .header__content{
+      @media (max-width: 768px) {
+        position: static;
+        background: none;
+        width: auto;
+        left: 0;
+        display: block;
+        max-height: 100%;
+        overflow-y: hidden;
+        overflow-x: hidden;
+        opacity: 1;
+        visibility: visible;
+        z-index: 1;
+        box-shadow: none;
+      }
       .button {
         margin-top: 2px;
         padding: 18px 22px;
+        @media (max-width: 768px) {
+          margin-top: 0px;
+          padding: 12px 12px;
+        }
       }
     }
   }
@@ -46,6 +84,12 @@ body.body-landing {
       background-size: cover;
       padding: 148px 0;
       position: relative;
+      @media (max-width: 1024px) {
+        padding: 99px 0;
+      }
+      @media (max-width: 768px) {
+        padding: 40px 0;
+      }
       .mouse {
         margin: 0;
         position: absolute;
@@ -107,6 +151,15 @@ body.body-landing {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        @media (max-width: 1850px) {
+          width: 60%;
+        }
+        @media (max-width: 1024px) {
+          width: 50%;
+        }
+        @media (max-width: 768px) {
+          width: 100%;
+        }
         .info{
           max-width: 730px;
           .title{
@@ -118,6 +171,19 @@ body.body-landing {
             line-height: 1.22;
             letter-spacing: -0.42px;
             color: #ffffff;
+            @media (max-width: 1024px) {
+              padding: 0px 0 28px;
+            }
+            @media (max-width: 768px) {
+              padding: 0px 0 20px;
+              font-size: 33px;
+              font-weight: normal;
+              font-stretch: normal;
+              font-style: normal;
+              line-height: 1.21;
+              letter-spacing: -0.3px;
+              color: #ffffff;
+            }
           }
           .text{
             font-size: 20px;
@@ -127,6 +193,16 @@ body.body-landing {
             line-height: 1.5;
             letter-spacing: -0.1px;
             color: #ffffff;
+            @media (max-width: 768px) {
+              padding: 0px 0 20px;
+              font-size: 16px;
+              font-weight: normal;
+              font-stretch: normal;
+              font-style: normal;
+              line-height: 1.5;
+              letter-spacing: normal;
+              color: #ffffff;
+            }
           }
         }
         .list {
@@ -143,6 +219,20 @@ body.body-landing {
             padding-left: 15px;
             position: relative;
             margin-right: 40px;
+            @media (max-width: 1024px) {
+              width: 100%;
+              padding-bottom: 20px;
+            }
+            @media (max-width: 768px) {
+              font-size: 16px;
+              font-weight: normal;
+              font-stretch: normal;
+              font-style: normal;
+              line-height: 1.5;
+              letter-spacing: normal;
+              padding-bottom: 8px;
+              color: #ffffff;
+            }
             &::before{
               content: '';
               position: absolute;
@@ -157,15 +247,35 @@ body.body-landing {
         }
       }
       .form-wrap {
-        width: 25%;
+        width: 28%;
         background-color: #ffffff;
         padding: 60px 40px 30px;
+        @media (max-width: 1850px) {
+          width: 38%;
+        }
+        @media (max-width: 1024px) {
+          width: 45%;
+          padding: 60px 30px 30px;
+          height: max-content;
+        }
+        @media (max-width: 768px) {
+          display: none;
+        }
         position: relative;
         .form-img {
           position: absolute;
           top: -80px;
           right: -110px;
           width: 220px;
+          @media (max-width: 1850px) {
+            right: -10px;
+          }
+          @media (max-width: 1024px) {
+            top: -60px;
+            width: 160px;
+          }
+          @media (max-width: 768px) {
+          }
         }
         .title {
           font-size: 26px;
@@ -202,8 +312,14 @@ body.body-landing {
     .landing-page-companies{
       background-color: #f1f1f1;
       padding: 42px 0;
+      @media (max-width: 768px) {
+        padding: 32px 0;
+      }
       .container{
         .row{
+          @media (max-width: 1024px) {
+            flex-wrap: wrap;
+          }
           .text{
             font-size: 20px;
             font-weight: normal;
@@ -214,14 +330,26 @@ body.body-landing {
             color: #000000;
             max-width: 226px;
             margin: auto 20px auto 0;
+            @media (max-width: 1024px) {
+              margin: 0;
+              width: 100%;
+              max-width: 100%;
+              padding-bottom: 35px;
+            }
+            @media (max-width: 768px) {
+              padding-bottom: 28px;
+            }
           }
           .logo-wrap {
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
             width: calc(100% - 226px);
+            @media (max-width: 1024px) {
+              width: 100%;
+            }
             .logo{
-              margin: 0 25px;
+              margin: 0 25px 25px 25px;
               max-height: 156px;
               max-width: 268px;
               object-fit: contain;
@@ -237,6 +365,12 @@ body.body-landing {
     }
     .landing-page-icons{
       padding: 134px 0 160px;
+      @media (max-width: 1024px) {
+        padding: 100px 0 100px;
+      }
+      @media (max-width: 768px) {
+
+      }
       .container{
         .row{
           .text{
@@ -255,6 +389,12 @@ body.body-landing {
           grid-template-columns: repeat(3, 1fr);
           grid-column-gap: 60px;
           grid-row-gap: 109px;
+          @media (max-width: 1024px) {
+            grid-column-gap: 40px;
+            grid-row-gap: 74px;
+          }
+          @media (max-width: 768px) {
+          }
           .item{
             margin: 0 auto;
             .icon{
@@ -281,6 +421,12 @@ body.body-landing {
     .landing-page-reviews{
       padding: 140px 0;
       background-color: #f1f1f1;
+      @media (max-width: 1024px) {
+        padding: 100px 0;
+      }
+      @media (max-width: 768px) {
+
+      }
       .container{
         .row{
           .text{
@@ -292,20 +438,41 @@ body.body-landing {
             letter-spacing: -0.3px;
             color: #2b2b2b;
             padding-bottom: 84px;
+            @media (max-width: 1024px) {
+              padding-bottom: 40px;
+            }
+            @media (max-width: 768px) {
+
+            }
           }
         }
         .reviews-slider-wrap{
           position: relative;
           .reviews-slider{
             margin: 0 135px;
+            @media (max-width: 1024px) {
+              margin: 0 83px;
+            }
+            @media (max-width: 768px) {
+            }
             .review{
               display: flex;
               justify-content: space-between;
+              @media (max-width: 1024px) {
+                flex-wrap: wrap;
+              }
+              @media (max-width: 768px) {
+              }
               &:focus{
                 outline: none;
               }
               .text-wrap{
                 width: 70%;
+                @media (max-width: 1024px) {
+                  width: 100%;
+                }
+                @media (max-width: 768px) {
+                }
                 .title{
                   font-size: 26px;
                   font-weight: bold;
@@ -329,6 +496,12 @@ body.body-landing {
               .about-wrap{
                 width: 25%;
                 margin: auto;
+                @media (max-width: 1024px) {
+                  width: 100%;
+                  margin-top: 20px;
+                }
+                @media (max-width: 768px) {
+                }
                 .photo{
                   width: 160px;
                   height: 160px;
@@ -373,6 +546,71 @@ body.body-landing {
             display: flex;
             flex-direction: row;
             justify-content: space-between;
+          }
+        }
+      }
+    }
+    .landing-page-demo{
+      padding: 140px 0;
+      background-image:  url('../img/content-landing-page/bg-bottom.jpg');
+      background-position: top;
+      background-size: cover;
+      @media (max-width: 1024px) {
+        padding: 120px 0;
+      }
+      @media (max-width: 768px) {
+      }
+      .container{
+        .row{
+          padding: 0 135px;
+          @media (max-width: 1024px) {
+            padding: 0 83px;
+            flex-wrap: wrap;
+          }
+          @media (max-width: 768px) {
+          }
+          .text{
+            font-size: 33px;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.33;
+            letter-spacing: -0.3px;
+            color: #ffffff;
+            max-width: 619px;
+            margin-right: 30px;
+            @media (max-width: 1024px) {
+              width: 100%;
+              text-align: center;
+              padding-bottom: 40px;
+            }
+            @media (max-width: 768px) {
+            }
+          }
+          .button{
+            font-size: 26px;
+            font-weight: 500;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.23;
+            letter-spacing: normal;
+            text-align: center;
+            padding: 28px 30px;
+            width: 407px;
+            margin: 0 auto;
+          }
+          .img{
+            margin-top: 73px;
+            width: 100%;
+            @media (max-width: 1024px) {
+              margin-top: 95px;
+            }
+            @media (max-width: 768px) {
+            }
+            img{
+              width: 100%;
+              object-fit: contain;
+            }
           }
         }
       }
