@@ -122,23 +122,13 @@ get_header('nozoom');?>
                                 <div class="text">The critical insight has been to focus on human factors</div>
                                 <a class="button" href="#">Interested in ORCHID?</a>
                             </div>
-                            <div class="logo"><img class="img" src="<?php echo get_template_directory_uri();?>/app/img/content-landing-page/1.png"></div>
-                            <div class="logo"><img class="img" src="<?php echo get_template_directory_uri();?>/app/img/content-landing-page/2.png"></div>
-                            <div class="logo"><img class="img" src="<?php echo get_template_directory_uri();?>/app/img/content-landing-page/3.png"></div>
-                            <div class="logo"><img class="img" src="<?php echo get_template_directory_uri();?>/app/img/content-landing-page/oil-logo.png"></div>
-                        </div>
-                    </div>
-                    <div class="b4">
-                        <div class="row">
-                            <div class="text">The critical insight has been to focus on human factors</div>
-                            <a class="button" href="#">Interested in ORCHID?</a>
-                        </div>
-                        <div class="row">
-                            <div class="img">
-                                <img src="https://freebornaiden.com/wp-content/uploads/2018/02/maxresdefault-1170x658.jpg" alt=""/>
+                            <div class="row">
+                                <div class="img">
+                                    <img src="https://freebornaiden.com/wp-content/uploads/2018/02/maxresdefault-1170x658.jpg" alt=""/>
+                                </div>
                             </div>
                         </div>
-                    </div>
+                    <?php endif;?>
                     <div class="b5">
                         <div class="video-wrap">
                             <div class="container dscvriv-vidio">
@@ -186,7 +176,7 @@ get_header('nozoom');?>
 
                             </div>
                         </div>
-                    <?php endif;?>
+                    </div>
                 </div>
             </div>
         </section>
