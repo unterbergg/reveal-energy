@@ -124,32 +124,32 @@ get_header('landing');?>
                     <div class="reviews-slider">
                         <?php foreach(get_field('reviews') as $review):?>
                             <div class="review">
-                            <div class="text-wrap">
-                                <div class="title">
-                                    <?php echo $review['title'];?>
+                                <div class="text-wrap">
+                                    <div class="title">
+                                        <?php echo $review['title'];?>
+                                    </div>
+                                    <div class="text">
+                                        <?php echo $review['text'];?>
+                                    </div>
                                 </div>
-                                <div class="text">
-                                    <?php echo $review['text'];?>
+                                <div class="about-wrap">
+                                    <div class="photo">
+                                        <?php if($review['partner']['image']):?>
+                                            <img src="<?php echo $review['partner']['image']['url'];?>"
+                                                 alt="<?php echo $review['partner']['image']['alt'];?>">
+                                        <?php else:?>
+                                            <!--TODO:ЗАГЛУШКУ-->
+                                            <img src="https://i.pinimg.com/originals/28/61/41/2861419363eb4a02c2fb0cacbce5f87e.jpg">
+                                        <?php endif;?>
+                                    </div>
+                                    <div class="name">
+                                        <?php echo $review['partner']['name'];?>
+                                    </div>
+                                    <div class="position">
+                                        <?php echo $review['partner']['position'];?>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="about-wrap">
-                                <div class="photo">
-                                    <?php if($review['partner']['image']):?>
-                                        <img src="<?php echo $review['partner']['image']['url'];?>"
-                                             alt="<?php echo $review['partner']['image']['alt'];?>">
-                                    <?php else:?>
-                                        <!--TODO:ЗАГЛУШКУ-->
-                                        <img src="https://i.pinimg.com/originals/28/61/41/2861419363eb4a02c2fb0cacbce5f87e.jpg">
-                                    <?php endif;?>
-                                </div>
-                                <div class="name">
-                                    <?php echo $review['partner']['name'];?>
-                                </div>
-                                <div class="position">
-                                    <?php echo $review['partner']['position'];?>
-                                </div>
-                            </div>
-                        </div>
                         <?php endforeach;?>
                     </div>
                     <div class="reviews-arrow"></div>
