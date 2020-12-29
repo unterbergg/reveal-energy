@@ -116,67 +116,101 @@ get_header('nozoom');?>
                         </div>
                     </div>
                     <?php endif;?>
-                    <?php if(get_field('showing__items')):?>
+                    <?php if(get_field('get__title') || get_field('get__button') || get_field('get__image')):?>
                         <div class="b4">
                             <div class="row">
-                                <div class="text">The critical insight has been to focus on human factors</div>
-                                <a class="button" href="#">Interested in ORCHID?</a>
+                                <?php if(get_field('get__title')):?>
+                                    <div class="text">
+                                        <?php echo get_field('get__title');?>
+                                    </div>
+                                <?php endif; ?>
+                                <?php if(get_field('get__button')):?>
+                                    <a class="button" href="<?php echo get_field('get__button')['link'];?>">
+                                        <?php echo get_field('get__button')['text'];?>
+                                    </a>
+                                <?php endif; ?>
                             </div>
-                            <div class="row">
-                                <div class="img">
-                                    <img src="https://freebornaiden.com/wp-content/uploads/2018/02/maxresdefault-1170x658.jpg" alt=""/>
+                            <?php if(get_field('get__image')):?>
+                                <div class="row">
+                                    <div class="img">
+                                        <img src="<?php echo get_field('get__image')['url'];?>"
+                                             alt="<?php echo get_field('get__image')['alt'];?>"
+                                        />
+                                    </div>
                                 </div>
-                            </div>
+                            <?php endif; ?>
                         </div>
                     <?php endif;?>
                     <div class="b5">
-                        <div class="video-wrap">
-                            <div class="container dscvriv-vidio">
-                                <div class="content-col__videowrapper dscvriv-vidio-wrap">
-                                    <video poster="/wp-content/uploads/2019/07/ScreenDSCVRi-e1562671115426.png" controls data-plyr-config='{ "title": "Protect Parent Well. Enhance Child Wells.", "description": "Can you protect the parent well while enhancing the fracture geometry of the child well?"}' class="player_main" playsinline controls>
-                                        <source src="https://www.dropbox.com/s/cmsl9jdjyu29bz6/dscvri-19-07-16REVISED.mp4?raw=1" type="video/mp4">
-                                    </video>
+                        <?php if(get_field('vblock__video')['poster'] && get_field('vblock__video')['link'] &&
+                            get_field('vblock__video')['title'] && get_field('vblock__video')['description']):?>
+                            <div class="video-wrap">
+                                <div class="container dscvriv-vidio">
+                                    <div class="content-col__videowrapper dscvriv-vidio-wrap">
+                                        <video poster="<?php echo get_field('vblock__video')['poster']['url'];?>"
+                                               controls
+                                               data-plyr-config='{ "title": "<?php echo get_field('vblock__video')['title'];?>", "description": "<?php echo get_field('vblock__video')['description'];?>"}'
+                                               class="player_main"
+                                               playsinline
+                                        >
+                                            <source src="<?php echo get_field('vblock__video')['link'];?>"
+                                                    type="video/mp4">
+                                        </video>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="info-wrap">
-                            <div class="title">Maecenas tempus</div>
-                            <ol class="text-wrap">
-                                <li>Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus.</li>
-                                <li>Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue.</li>
-                                <li>Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum.</li>
-                                <li>Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna.</li>
-                            </ol>
-                        </div>
+                        <?php endif;?>
+                        <?php if(get_field('vblock__title') || get_field('vblock__text')):?>
+                            <div class="info-wrap">
+                                <div class="title">
+                                    <?php echo get_field('vblock__title');?>
+                                </div>
+                                <?php echo get_field('vblock__text');?>
+    <!--                            <ol class="text-wrap">-->
+    <!--                                <li>Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus.</li>-->
+    <!--                                <li>Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue.</li>-->
+    <!--                                <li>Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum.</li>-->
+    <!--                                <li>Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna.</li>-->
+    <!--                            </ol>-->
+                            </div>
+                        <?php endif;?>
                     </div>
-                    <div class="b6">
-                        <div class="row">
-                            <div class="text">The critical insight has been to focus on human factors</div>
-                            <a class="button" href="#">Schedule a ORCHID Demo</a>
+                    <!-- TODO: Заменить BUTTON проверку-->
+                    <?php if(get_field('orchiddemo__text') || (get_field('orchiddemo__button')['text'] &&
+                            get_field('orchiddemo__button')['link'])):?>
+                        <div class="b6">
+                            <div class="row">
+                                <?php if(get_field('orchiddemo__text')):?>
+                                    <div class="text">
+                                        <?php echo get_field('orchiddemo__text');?>
+                                    </div>
+                                <?php endif;?>
+                                <?php if(get_field('orchiddemo__button')['text'] && get_field('orchiddemo__button')['link']):?>
+                                    <a class="button" href="<?php echo get_field('orchiddemo__button')['link'];?>">
+                                        <?php echo get_field('orchiddemo__button')['text'];?>
+                                    </a>
+                                <?php endif;?>
+                            </div>
                         </div>
-                    </div>
-                    <div class="b7">
-                        <div class="title">FAQ</div>
-                        <div class="faq-wrap">
-                            <button class="accordion">Oilfield digitalization technologies and tools enable Oil and Gas companies to collect more field data on well completions and reservoir conditions.</button>
-                            <div class="panel">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                            </div>
-                            <button class="accordion even">Section 1</button>
-                            <div class="panel even">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                            </div>
-                            <button class="accordion">Section 1</button>
-                            <div class="panel">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                            </div>
-                            <button class="accordion even">Section 1</button>
-                            <div class="panel even">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <?php endif;?>
+                    <?php if(get_field('faqs__faqs')):?>
+                        <div class="b7">
 
+                            <div class="title">
+                                <?php echo get_field('faqs__title');?>
+                            </div>
+                            <div class="faq-wrap">
+                                <?php foreach(get_field('faqs__faqs') as $key => $item):?>
+                                    <button class="accordion <?php echo $key%2 === 0 ? '':'even';?>">
+                                        <?php echo $item['question'];?>
+                                    </button>
+                                    <div class="panel">
+                                        <?php echo $item['answer'];?>
+                                    </div>
+                                <?php endforeach;?>
                             </div>
                         </div>
-                    </div>
+                    <?php endif;?>
                 </div>
             </div>
         </section>

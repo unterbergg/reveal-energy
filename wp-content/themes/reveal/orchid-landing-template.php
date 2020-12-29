@@ -6,7 +6,7 @@
 get_header('landing');?>
 
 
-
+<!-- TODO: Заменить BUTTON проверку-->
 <div class="landing-page">
     <section id="landing-s1" class="landing-page-info">
         <div class="container">
