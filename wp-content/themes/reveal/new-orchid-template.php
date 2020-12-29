@@ -122,61 +122,67 @@ get_header('nozoom');?>
                                 <div class="text">The critical insight has been to focus on human factors</div>
                                 <a class="button" href="#">Interested in ORCHID?</a>
                             </div>
-                            <div class="row">
-                                <div class="img">
-                                    <img src="https://freebornaiden.com/wp-content/uploads/2018/02/maxresdefault-1170x658.jpg" alt=""/>
+                            <div class="logo"><img class="img" src="<?php echo get_template_directory_uri();?>/app/img/content-landing-page/1.png"></div>
+                            <div class="logo"><img class="img" src="<?php echo get_template_directory_uri();?>/app/img/content-landing-page/2.png"></div>
+                            <div class="logo"><img class="img" src="<?php echo get_template_directory_uri();?>/app/img/content-landing-page/3.png"></div>
+                            <div class="logo"><img class="img" src="<?php echo get_template_directory_uri();?>/app/img/content-landing-page/oil-logo.png"></div>
+                        </div>
+                    </div>
+                    <div class="b4">
+                        <div class="row">
+                            <div class="text">The critical insight has been to focus on human factors</div>
+                            <a class="button" href="#">Interested in ORCHID?</a>
+                        </div>
+                        <div class="row">
+                            <div class="img">
+                                <img src="https://freebornaiden.com/wp-content/uploads/2018/02/maxresdefault-1170x658.jpg" alt=""/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="b5">
+                        <div class="video-wrap">
+                            <div class="container dscvriv-vidio">
+                                <div class="content-col__videowrapper dscvriv-vidio-wrap">
+                                    <video poster="/wp-content/uploads/2019/07/ScreenDSCVRi-e1562671115426.png" controls data-plyr-config='{ "title": "Protect Parent Well. Enhance Child Wells.", "description": "Can you protect the parent well while enhancing the fracture geometry of the child well?"}' class="player_main" playsinline controls>
+                                        <source src="https://www.dropbox.com/s/cmsl9jdjyu29bz6/dscvri-19-07-16REVISED.mp4?raw=1" type="video/mp4">
+                                    </video>
                                 </div>
                             </div>
                         </div>
-                    <?php endif;?>
-                    <?php if(get_field('showing__items')):?>
-                        <div class="b5">
-                            <div class="video-wrap">
-                                <div class="container dscvriv-vidio">
-                                    <div class="content-col__videowrapper dscvriv-vidio-wrap">
-                                        <video poster="/wp-content/uploads/2019/07/ScreenDSCVRi-e1562671115426.png" controls data-plyr-config='{ "title": "Protect Parent Well. Enhance Child Wells.", "description": "Can you protect the parent well while enhancing the fracture geometry of the child well?"}' class="player_main" playsinline controls>
-                                            <source src="https://www.dropbox.com/s/cmsl9jdjyu29bz6/dscvri-19-07-16REVISED.mp4?raw=1" type="video/mp4">
-                                        </video>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="info-wrap">
-                                <div class="title">Maecenas tempus</div>
-                                <ol class="text-wrap">
-                                    <li>Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus.</li>
-                                    <li>Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue.</li>
-                                    <li>Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum.</li>
-                                    <li>Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna.</li>
-                                </ol>
-                            </div>
+                        <div class="info-wrap">
+                            <div class="title">Maecenas tempus</div>
+                            <ol class="text-wrap">
+                                <li>Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus.</li>
+                                <li>Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue.</li>
+                                <li>Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum.</li>
+                                <li>Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna.</li>
+                            </ol>
                         </div>
-                    <?php endif;?>
-                    <?php if(get_field('showing__items')):?>
-                        <div class="b6">
-                            <div class="row">
-                                <div class="text">The critical insight has been to focus on human factors</div>
-                                <a class="button" href="#">Schedule a ORCHID Demo</a>
-                            </div>
+                    </div>
+                    <div class="b6">
+                        <div class="row">
+                            <div class="text">The critical insight has been to focus on human factors</div>
+                            <a class="button" href="#">Schedule a ORCHID Demo</a>
                         </div>
-                    <?php endif;?>
-                    <?php if(get_field('showing__items')):?>
-                        <div class="b7">
-                            <div class="title"></div>
-                            <div class="faq-wrap">
-                                <button class="accordion">Section 1</button>
-                                <div class="panel">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                                </div>
-
-                                <button class="accordion">Section 2</button>
-                                <div class="panel">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                                </div>
-
-                                <button class="accordion">Section 3</button>
-                                <div class="panel">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                                </div>
+                    </div>
+                    <div class="b7">
+                        <div class="title">FAQ</div>
+                        <div class="faq-wrap">
+                            <button class="accordion">Oilfield digitalization technologies and tools enable Oil and Gas companies to collect more field data on well completions and reservoir conditions.</button>
+                            <div class="panel">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            </div>
+                            <button class="accordion even">Section 1</button>
+                            <div class="panel even">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            </div>
+                            <button class="accordion">Section 1</button>
+                            <div class="panel">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            </div>
+                            <button class="accordion even">Section 1</button>
+                            <div class="panel even">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 
                             </div>
                         </div>
@@ -185,9 +191,6 @@ get_header('nozoom');?>
             </div>
         </section>
         <section class="connect">
-            <div class="container">
-                <div class="line"></div>
-            </div>
             <div class="container">
                 <div class="col">
                     <h2 class="margin-bottom">How can we help?</h2>
