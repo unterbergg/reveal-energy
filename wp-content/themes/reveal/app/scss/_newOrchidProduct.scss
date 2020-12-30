@@ -2,6 +2,10 @@ body.global.nozoom {
   @media only screen and (min-width: 1024px) and (max-width: 1600px) {
     zoom: 1;
   }
+  @media (max-width: 1024px) {
+  }
+  @media (max-width: 768px) {
+  }
   input, textarea {
     border: #666 1px solid;
     outline: none;
@@ -23,14 +27,32 @@ body.global.nozoom {
     .logo-row{
       padding: 74px 0;
       justify-content: left;
+      @media (max-width: 1024px) {
+        padding: 40px 0 29px;
+        flex-wrap: wrap;
+      }
+      @media (max-width: 768px) {
+      }
       .logo{
         margin-right: 176px;
+        @media (max-width: 1024px) {
+          margin: 0;
+          padding-bottom: 60px;
+        }
+        @media (max-width: 768px) {
+          padding-bottom: 40px;
+        }
         img{
           max-width: 100%;
         }
       }
       .info-wrap {
         max-width: 619px;
+        @media (max-width: 1024px) {
+          max-width: 100%;
+        }
+        @media (max-width: 768px) {
+        }
         .info{
           font-family: Gotham;
           font-size: 33px;
@@ -40,12 +62,36 @@ body.global.nozoom {
           line-height: 1.21;
           letter-spacing: -0.3px;
           color: #ffffff;
+          @media (max-width: 1024px) {
+          }
+          @media (max-width: 768px) {
+            font-size: 28px;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.43;
+            letter-spacing: -0.25px;
+            color: #ffffff;
+          }
         }
         .button{
           width: 100%;
           margin-top: 32px;
           text-align: center;
           font-weight: 400;
+          @media (max-width: 1024px) {
+          }
+          @media (max-width: 768px) {
+            margin-top: 16px;
+            font-size: 16px;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1;
+            letter-spacing: normal;
+            color: #2b2b2b;
+            padding: 22px 20px;
+          }
           span{
             font-family: Gotham;
             font-size: 26px;
@@ -55,6 +101,13 @@ body.global.nozoom {
             line-height: 1.21;
             letter-spacing: -.3px;
             @media (max-width: 768px) {
+              font-size: 22px;
+              font-weight: 500;
+              font-stretch: normal;
+              font-style: normal;
+              line-height: 1.45;
+              letter-spacing: normal;
+              color: #2b2b2b;
             }
           }
         }
@@ -62,6 +115,12 @@ body.global.nozoom {
     }
     .mark-wrap{
       position: relative;
+      @media (max-width: 1024px) {
+        padding-bottom: 55px;
+      }
+      @media (max-width: 768px) {
+        padding-bottom: 44px;
+      }
       .min-text {
         opacity: 0.7;
         font-size: 24px;
@@ -73,6 +132,17 @@ body.global.nozoom {
         color: #ffffff;
         padding-bottom: 41px;
         display: flex;
+        @media (max-width: 1460px) {
+          height: fit-content;
+          padding: 80px 0 0 0;
+        }
+        @media (max-width: 1024px) {
+          padding: 80px 0 0 0;
+        }
+        @media (max-width: 768px) {
+          font-size: 18px;
+          padding: 20px 0 0 0;
+        }
         img{
           margin: auto;
           padding-right: 8px;
@@ -82,8 +152,21 @@ body.global.nozoom {
         position: absolute;
         right: 0;
         bottom: 22px;
+        @media (max-width: 1460px) {
+          position: relative;
+        }
+        @media (max-width: 1024px) {
+          position: static;
+        }
+        @media (max-width: 768px) {
+        }
         img{
           max-height: 148px;
+          @media (max-width: 1024px) {
+          }
+          @media (max-width: 768px) {
+            max-height: 80px;
+          }
         }
       }
     }
@@ -91,11 +174,22 @@ body.global.nozoom {
   .product-orchid{
     background-color: #f1f1f1;
     padding: 109px 0 0px;
+    @media (max-width: 1024px) {
+      padding: 70px 0 0px;
+    }
+    @media (max-width: 768px) {
+      padding: 15px 0 0px;
+    }
     .page-content{
       box-shadow: 0 0 8px rgba(0,0,0,.15);
       background-color: #fff;
       position: relative;
       padding: 70px 75px;
+      @media (max-width: 1024px) {
+      }
+      @media (max-width: 768px) {
+        padding: 26px 18px;
+      }
       .b1{
         .title{
           font-size: 33px;
@@ -105,6 +199,17 @@ body.global.nozoom {
           line-height: 1.21;
           letter-spacing: -0.3px;
           color: #2b2b2b;
+          @media (max-width: 1024px) {
+          }
+          @media (max-width: 768px) {
+            font-size: 26px;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.31;
+            letter-spacing: -0.2px;
+            color: #2b2b2b;
+          }
         }
         .items-wrap{
           display: grid;
@@ -113,7 +218,19 @@ body.global.nozoom {
           grid-row-gap: 70px;
           padding: 83px 0 70px;
           border-bottom: 1px solid #dedede;
-          .img{}
+          @media (max-width: 1024px) {
+            grid-template-columns: repeat(2, 1fr);
+          }
+          @media (max-width: 768px) {
+            grid-column-gap: 34px;
+            grid-row-gap: 31px;
+            padding: 36px 0 34px;
+          }
+          .img{
+            img{
+              max-width: 100%;
+            }
+          }
           .item-title{
             font-size: 20px;
             font-weight: 500;
@@ -124,11 +241,30 @@ body.global.nozoom {
             text-align: center;
             color: #686667;
             padding-top: 27px;
+            @media (max-width: 1024px) {
+            }
+            @media (max-width: 768px) {
+              padding-top: 8px;
+              font-size: 14px;
+              font-weight: bold;
+              font-stretch: normal;
+              font-style: normal;
+              line-height: 1.71;
+              letter-spacing: normal;
+              text-align: center;
+              color: #2b2b2b;
+            }
           }
         }
       }
       .b2{
         padding: 140px 0;
+        @media (max-width: 1024px) {
+          padding: 70px 0 80px;
+        }
+        @media (max-width: 768px) {
+          padding: 40px 0 40px;
+        }
         .title{
           font-size: 33px;
           font-weight: normal;
@@ -317,14 +453,28 @@ body.global.nozoom {
         margin: 0 -75px;
         padding: 60px 32px;
         background-color: #f1f1f1;
+        @media (max-width: 1024px) {
+        }
+        @media (max-width: 768px) {
+          margin: 0 -18px;
+          padding: 32px 23px;
+        }
         .logo-wrap{
           display: grid;
           grid-template-columns: repeat(4, 1fr);
           grid-column-gap: 128px;
           grid-row-gap: 35px;
+          @media (max-width: 1024px) {
+            grid-column-gap: 84px;
+          }
+          @media (max-width: 768px) {
+            grid-template-columns: repeat(2, 1fr);
+            grid-column-gap: 38px;
+            grid-row-gap: 35px;
+          }
           .logo{
             display: flex;
-            .img{
+            img{
               max-width: 100%;
               margin: auto;
             }
@@ -337,11 +487,21 @@ body.global.nozoom {
         background-position: top;
         background-size: cover;
         margin: 0 -75px;
+        @media (max-width: 1024px) {
+          padding: 120px 0;
+        }
+        @media (max-width: 768px) {
+          margin: 0 -18px;
+          padding: 148px 18px 40px;
+        }
         .row{
           padding: 0 135px;
           @media (max-width: 1024px) {
-            padding: 0 83px;
+            padding: 0 25px;
             flex-wrap: wrap;
+            max-width: 633px;
+            margin: auto;
+            justify-content: center;
           }
           @media (max-width: 768px) {
             padding: 0;
@@ -417,11 +577,22 @@ body.global.nozoom {
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
+        @media (max-width: 1024px) {
+          padding: 80px 0;
+        }
+        @media (max-width: 768px) {
+          padding: 40px 0 0;
+        }
         input{
           border: none;
         }
         .video-wrap{
           width: 60%;
+          @media (max-width: 1024px) {
+            width: 100%;
+          }
+          @media (max-width: 768px) {
+          }
           .dscvriv-vidio {
             width: 100%;
             max-width: 100%;
@@ -433,6 +604,14 @@ body.global.nozoom {
         }
         .info-wrap{
           width: 35%;
+          @media (max-width: 1024px) {
+            width: 100%;
+            max-width: 650px;
+            padding-top: 60px;
+            margin: auto;
+          }
+          @media (max-width: 768px) {
+          }
           .title{
             font-size: 33px;
             font-weight: normal;
@@ -442,6 +621,18 @@ body.global.nozoom {
             letter-spacing: -0.3px;
             color: #2b2b2b;
             padding-bottom: 32px;
+            @media (max-width: 1024px) {
+            }
+            @media (max-width: 768px) {
+              font-size: 26px;
+              font-weight: 400;
+              font-stretch: normal;
+              font-style: normal;
+              line-height: 1.31;
+              letter-spacing: -.2px;
+              color: #2b2b2b;
+              padding-bottom: 18px;
+            }
           }
           ol, ul {
             li{
@@ -453,6 +644,17 @@ body.global.nozoom {
               letter-spacing: normal;
               color: #686667;
               padding-bottom: 24px;
+              @media (max-width: 1024px) {
+              }
+              @media (max-width: 768px) {
+                font-size: 16px;
+                font-weight: normal;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: 1.5;
+                letter-spacing: normal;
+                padding-bottom: 16px;
+              }
             }
           }
         }
@@ -463,10 +665,26 @@ body.global.nozoom {
         background-size: cover;
         padding: 184px 0;
         margin: 0 -75px;
+        @media (max-width: 1024px) {
+          padding: 120px 0;
+        }
+        @media (max-width: 768px) {
+          margin: 0 -18px;
+          padding: 148px 18px 80px;
+        }
         .row{
           max-width: 1134px;
           padding: 0 24px;
           margin: auto;
+          @media (max-width: 1024px) {
+            max-width: 619px;
+            flex-wrap: wrap;
+            text-align: center;
+            justify-content: center;
+          }
+          @media (max-width: 768px) {
+            padding: 0;
+          }
           .text{
             font-size: 33px;
             font-weight: normal;
@@ -477,6 +695,22 @@ body.global.nozoom {
             color: #ffffff;
             margin-right: 60px;
             max-width: 55%;
+            @media (max-width: 1024px) {
+              width: 100%;
+              max-width: 100%;
+              padding-bottom: 40px;
+              margin-right: 0px;
+            }
+            @media (max-width: 768px) {
+              font-size: 26px;
+              font-weight: normal;
+              font-stretch: normal;
+              font-style: normal;
+              line-height: 1.31;
+              letter-spacing: -0.2px;
+              text-align: center;
+              color: #ffffff;
+            }
           }
           .button{
             font-size: 26px;
@@ -485,11 +719,29 @@ body.global.nozoom {
             font-style: normal;
             line-height: 1.23;
             letter-spacing: normal;
+            @media (max-width: 768px) {
+              font-size: 16px;
+              font-weight: 500;
+              font-stretch: normal;
+              font-style: normal;
+              line-height: 1;
+              letter-spacing: normal;
+              text-align: center;
+              color: #2b2b2b;
+              padding: 19px 17px;
+
+            }
           }
         }
       }
       .b7{
         padding: 140px 0 70px;
+        @media (max-width: 1024px) {
+          padding: 80px 0 5px;
+        }
+        @media (max-width: 768px) {
+          padding: 40px 0 35px;
+        }
         .title{
           font-size: 33px;
           font-weight: normal;
@@ -499,6 +751,19 @@ body.global.nozoom {
           letter-spacing: -0.3px;
           color: #2b2b2b;
           padding-bottom: 70px;
+          @media (max-width: 1024px) {
+            padding-bottom: 40px;
+          }
+          @media (max-width: 768px) {
+            font-size: 26px;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.31;
+            letter-spacing: -0.2px;
+            color: #2b2b2b;
+            padding-bottom: 20px;
+          }
         }
         .faq-wrap{
           .accordion {
@@ -518,6 +783,16 @@ body.global.nozoom {
             letter-spacing: normal;
             color: #ffffff;
             position: relative;
+            @media (max-width: 1024px) {
+            }
+            @media (max-width: 768px) {
+              padding: 12px 52px 12px 16px;
+              font-size: 15px;
+              font-weight: normal;
+              font-stretch: normal;
+              font-style: normal;
+              line-height: 1.6;
+            }
           }
           .accordion:after {
             content: ' ';
@@ -540,7 +815,12 @@ body.global.nozoom {
             position: absolute;
             right: 30px;
             top: 50%;
-            transform: translate(-50%, -50%)
+            transform: translate(-50%, -50%);
+            @media (max-width: 1024px) {
+            }
+            @media (max-width: 768px) {
+              right: 0px;
+            }
           }
           .panel {
             max-height: 0;
@@ -555,6 +835,16 @@ body.global.nozoom {
             color: #ffffff;
             background-color: #454545;
             padding: 0 104px 0px 24px;
+            @media (max-width: 1024px) {
+            }
+            @media (max-width: 768px) {
+              padding: 0px 52px 0px 16px;
+              font-size: 12px;
+              font-weight: normal;
+              font-stretch: normal;
+              font-style: normal;
+              line-height: 1.67;
+            }
             p{
               margin-bottom: 24px;
             }
@@ -567,11 +857,23 @@ body.global.nozoom {
     }
   }
   .connect{
-    padding-bottom: 140px;
+    padding: 0 15px 140px;
+    @media (max-width: 1024px) {
+      padding: 0 25px 80px;
+    }
+    @media (max-width: 768px) {
+      padding: 0 15px 40px;
+    }
     .container{
       padding: 70px 15px 100px;
       box-shadow: 0 0 6px 0 #e2e2e2;
       max-width: 1610px;
+      @media (max-width: 1024px) {
+        padding: 70px 15px 34px;
+      }
+      @media (max-width: 768px) {
+        padding: 50px 15px 34px;
+      }
       input[type="submit"] {
         font-size: 20px;
         font-weight: 500;
@@ -583,6 +885,18 @@ body.global.nozoom {
         border: none;
         padding: 22px 50px;
         margin: auto;
+      }
+      h2{
+        @media (max-width: 1024px) {
+        }
+        @media (max-width: 768px) {
+          font-size: 26px;
+          font-weight: normal;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: 1.31;
+          letter-spacing: -0.2px;
+        }
       }
     }
   }
