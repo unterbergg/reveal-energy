@@ -204,7 +204,7 @@ get_header('nozoom');?>
                                     <button class="accordion <?php echo $key%2 === 0 ? '':'even';?>">
                                         <?php echo $item['question'];?>
                                     </button>
-                                    <div class="panel">
+                                    <div class="panel <?php echo $key%2 === 0 ? '':'even';?>">
                                         <?php echo $item['answer'];?>
                                     </div>
                                 <?php endforeach;?>
