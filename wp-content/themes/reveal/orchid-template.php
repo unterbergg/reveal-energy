@@ -17,7 +17,7 @@ get_header();?>
             <div class="logo"><img src="<?php echo get_template_directory_uri(); ?>/app/img/orchid/colored-logo.svg"></div>
             <div class="info-wrap">
                 <div class="info">Open interpretation platform that supports improved decision-making for unconventional wells</div>
-                <a class="button" href="/contact/"><span>Interested in ORCHID?</span><br>Contact Us to get registered for the beta program.</a>
+                <a class="button" href="/contact/"><span>Interested in ORCHID?</span><br>Contact us to set up a demo.</a>
             </div>
         </div>
     </div>

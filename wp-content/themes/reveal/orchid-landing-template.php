@@ -31,9 +31,10 @@ get_header('landing');?>
                     <?php endif;?>
                 </div>
                 <div class="form-wrap">
-                    <div class="title">Try the product now</div>
+                    <div class="title"><?php echo get_field('mscrn__form_title');?></div>
                     <img class="form-img" src="<?php echo get_template_directory_uri();?>/app/img/content-landing-page/oil-logo.png">
-                    <form action="" class="form-download landing-page" enctype="multipart/form-data" autocomplete="off">
+                    <div title="form-iframe"><?php echo get_field('mscrn__form_iframe');?></div>
+              <!--      <form action="" class="form-download landing-page" enctype="multipart/form-data" autocomplete="off">
                         <div class="connect__row">
                             <div class="connect__col connect__col--full">
                                 <p>Full name</p>
@@ -55,7 +56,7 @@ get_header('landing');?>
                         <div class="connect__row">
                             <input class="button" type="submit" value="Download">
                         </div>
-                    </form>
+                    </form>-->
                 </div>
             </div>
         </div>
@@ -66,25 +67,7 @@ get_header('landing');?>
         </div>
     </section>
 
-    <?php if(get_field('clients__clients') && get_field('clients__text')):?>
-        <section id="landing-s2" class="landing-page-companies">
-            <div class="container">
-                <div class="row">
-                    <div class="text">
-                        <?php echo get_field('clients__text');?>
-                    </div>
-                    <div class="logo-wrap">
-                        <?php foreach(get_field('clients__clients') as $client):?>
-                            <div class="logo">
-                                <img src="<?php echo $client['logo']['url'];?>" alt="<?php echo $client['logo']['alt'];
-                                ?>">
-                            </div>
-                        <?php endforeach;?>
-                    </div>
-                </div>
-            </div>
-        </section>
-    <?php endif;?>
+
     <?php if(get_field('covered__items')): ?>
         <section id="landing-s3" class="landing-page-icons">
             <div class="container">
@@ -107,7 +90,8 @@ get_header('landing');?>
                                     />
                                 <?php endif; ?>
                             </div>
-                            <div class="text"><?php echo $item['title'];?></div>
+                            <div class="title"><?php echo $item['title'];?></div>
+                            <div class="text"><?php echo $item['text'];?></div>
                         </div>
                     <?php endforeach;?>
                 </div>
@@ -118,7 +102,7 @@ get_header('landing');?>
         <section id="landing-s4" class="landing-page-reviews">
             <div class="container">
                 <div class="row">
-                    <div class="text">Feedback from our partners</div>
+                    <div class="text"><?php echo get_field('reviews__block_title');?></div>
                 </div>
                 <div class="reviews-slider-wrap">
                     <div class="reviews-slider">
@@ -139,7 +123,7 @@ get_header('landing');?>
                                                  alt="<?php echo $review['partner']['image']['alt'];?>">
                                         <?php else:?>
                                             <!--TODO:ЗАГЛУШКУ-->
-                                            <img src="https://i.pinimg.com/originals/28/61/41/2861419363eb4a02c2fb0cacbce5f87e.jpg">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/app/img/orchid/logo2.png">
                                         <?php endif;?>
                                     </div>
                                     <div class="name">
@@ -160,10 +144,17 @@ get_header('landing');?>
     <?php if(get_field('get__title') || get_field('get__button') || get_field('get__image')): ?>
         <section id="landing-s5" class="landing-page-demo">
             <div class="container">
-                <div class="row">
+                <div class="row title-wrap">
                     <?php if(get_field('get__title')):?>
-                        <div class="text">
+                        <div class="title">
                             <?php echo get_field('get__title');?>
+                        </div>
+                    <?php endif; ?>
+                </div>
+                <div class="row">
+                    <?php if(get_field('get__text')):?>
+                        <div class="text">
+                            <?php echo get_field('get__text');?>
                         </div>
                     <?php endif; ?>
                     <?php if(get_field('get__button')):?>
