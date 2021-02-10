@@ -672,7 +672,7 @@ body.global.nozoom {
           padding: 80px 0;
         }
         @media (max-width: 768px) {
-          padding: 40px 0 0;
+          padding: 40px 0;
         }
         input{
           border: none;
@@ -684,6 +684,9 @@ body.global.nozoom {
           @media (max-width: 1024px) {
             margin-bottom: 100px;
             flex-wrap: wrap;
+          }
+          @media (max-width: 1024px) {
+            margin-bottom: 40px;
           }
           &:last-child{
             margin-bottom: 0;
@@ -704,6 +707,7 @@ body.global.nozoom {
           }
           .info-wrap{
             width: calc(45% - 60px);
+            margin: auto 0;
             @media (max-width: 1024px) {
               width: 100%;
               max-width: 100%;

@@ -351,6 +351,11 @@
                 "param": "post_template",
                 "operator": "!=",
                 "value": "new-orchid-template.php"
+            },
+            {
+                "param": "post_template",
+                "operator": "!=",
+                "value": "getademo-landing-template.php"
             }
         ]
     ],
@@ -362,5 +367,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1609161642
+    "modified": 1612952061
 }
