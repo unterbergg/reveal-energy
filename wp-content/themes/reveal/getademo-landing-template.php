@@ -100,9 +100,9 @@ get_header('landing');?>
     <?php endif; ?>
     <?php if(get_field('information_blocks')):?>
         <div class="b5">
-            <div class="container">
-                <?php foreach(get_field('information_blocks') as $information):?>
-                    <div class="block">
+            <?php foreach(get_field('information_blocks') as $information):?>
+                <div class="block">
+                    <div class="info-wrapper container">
                         <div class="image-wrap">
                             <img src="<?php echo $information['image']['url'];?>"
                                  alt="<?php echo $information['image']['alt'];?>">
@@ -114,8 +114,8 @@ get_header('landing');?>
                             <?php echo $information['text'];?>
                         </div>
                     </div>
-                <?php endforeach;?>
-            </div>
+                </div>
+            <?php endforeach;?>
         </div>
     <?php endif;?>
 

@@ -480,36 +480,53 @@ body.body-landing {
       }
     }
     .b5{
-      padding: 140px 0;
-      display: flex;
-      justify-content: space-between;
-      flex-wrap: wrap;
+      padding: 20px 0;
       @media (max-width: 1024px) {
-        padding: 80px 0;
+        padding: 0px;
       }
       @media (max-width: 768px) {
-        padding: 40px 0;
+        padding: 20px 0;
       }
       input{
         border: none;
       }
-      .block{
+      .info-wrapper{
         display: flex;
         justify-content: space-between;
-        margin-bottom: 140px;
+        flex-direction: row-reverse;
         @media (max-width: 1024px) {
-          margin-bottom: 100px;
           flex-wrap: wrap;
         }
         @media (max-width: 768px) {
-          margin-bottom: 40px;
           flex-wrap: wrap;
         }
-        &:last-child{
-          margin-bottom: 0;
+      }
+      .block{
+        padding: 120px 0;
+        @media (max-width: 1024px) {
+          padding: 100px 0;
         }
-        &:nth-child(odd){
-          flex-direction: row-reverse;
+        @media (max-width: 768px) {
+          /*flex-wrap: wrap;*/
+          padding: 40px 0;
+        }
+        &:nth-child(2n){
+          background-color: #231f20;
+          @media (max-width: 768px) {
+          }
+          .info-wrapper{
+            flex-direction: row;
+          }
+          .info-wrap{
+            .title{
+              color: #ffffff;
+            }
+            ol, ul {
+              li{
+                color: #ffffff;
+              }
+            }
+          }
         }
         .image-wrap{
           width: 55%;
@@ -582,6 +599,22 @@ body.body-landing {
                 padding-bottom: 16px;
               }
             }
+          }
+        }
+      }
+      .video-wrap{
+        width: 60%;
+        @media (max-width: 1024px) {
+          width: 100%;
+        }
+        @media (max-width: 768px) {
+        }
+        .dscvriv-vidio {
+          width: 100%;
+          max-width: 100%;
+          padding: 0;
+          .content-col__videowrapper {
+            margin-top: 0px;
           }
         }
       }
