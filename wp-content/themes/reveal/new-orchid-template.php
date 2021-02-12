@@ -105,7 +105,7 @@ get_header('nozoom');?>
                         </div>
                     </div>
                     <?php endif;?>
-                    <?php if(get_field('get__title') || get_field('get__button') || get_field('get__image')):?>
+                    <?php if(get_field('get__slider')):?>
                         <div class="b4">
                             <div class="row title-wrapper">
                                 <?php if(get_field('get__section_title')):?>
