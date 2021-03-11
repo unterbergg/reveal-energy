@@ -5326,6 +5326,11 @@ a {
     border: 1px solid #dedede;
     margin-bottom: 65px;
   }
+  .form-wrapper{
+    max-width: 1080px;
+    width: 100%;
+    margin: auto;
+  }
   .row {
     &--form {
       max-width: 1080px;

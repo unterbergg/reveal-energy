@@ -146,6 +146,11 @@ body.body-landing {
           opacity: 0;
         }
       }
+      .row{
+        @media (max-width: 920px) {
+          flex-wrap: wrap;
+        }
+      }
       .info-wrap{
         width: calc(100% - 505px);
         display: flex;
@@ -154,6 +159,10 @@ body.body-landing {
         margin-right: 100px;
         @media (max-width: 1024px) {
           width: calc(100% - 495px);
+        }
+        @media (max-width: 920px) {
+          width: 100%;
+          margin-right: 0;
         }
         @media (max-width: 768px) {
           width: 100%;
@@ -254,8 +263,13 @@ body.body-landing {
           padding: 60px 30px 30px;
           height: max-content;
         }
+        @media (max-width: 920px) {
+          width: 100%;
+          margin: 50px auto 0;
+        }
         @media (max-width: 768px) {
-          display: none;
+          width: 100%;
+          margin-top: 50px;
         }
         position: relative;
         .form-img {

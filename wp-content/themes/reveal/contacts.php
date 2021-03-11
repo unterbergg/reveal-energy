@@ -3,7 +3,7 @@
  * Template Name: Contacts Us
  */
 
-get_header(); ?>
+get_header('nozoom');?>
 
 <section class="page-info page-info--newsevents">
     <div class="container">
@@ -41,7 +41,7 @@ get_header(); ?>
             <div class="info">
                 <a href="tel:1-888-738-3250" class="info-element">
                     <div class="icon"><i class="fas fa-phone"></i></div>
-                    <p>Call us: <span>1-888-738-3250</span></p>
+                    <p>Call us: <span><?php echo get_field('call_us');?></span></p>
                 </a>
 <!--                <a href="mailto:info@reveal-energy.com" class="info-element">
                     <div class="icon"><i class="fas fa-envelope"></i></div>
@@ -51,17 +51,17 @@ get_header(); ?>
         </div>
     </div>
 </section>
-
 <section class="connect">
     <div class="container">
         <div class="line"></div>
     </div>
     <div class="container">
         <div class="col">
-            <h2 class="margin-bottom">How can we help?</h2>
+            <h2 class="margin-bottom"><?php echo get_field('form_title');?></h2>
         </div>
-        <div class="row row--form">
-            <form action="" class="form contacts" enctype="multipart/form-data" autocomplete="off">
+        <div class="form-wrapper">
+            <?php echo get_field('form_iframe');?>
+            <!--<form action="" class="form contacts" enctype="multipart/form-data" autocomplete="off">
                 <div class="connect__row">
                     <div class="connect__col connect__col--half ">
                         <p>Company</p>
@@ -105,7 +105,7 @@ get_header(); ?>
                 <div class="connect__row">
                     <input type="submit" value="Send message">
                 </div>
-            </form>
+            </form>-->
         </div>
     </div>
 </section>
