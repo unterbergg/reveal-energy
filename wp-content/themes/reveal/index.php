@@ -84,12 +84,12 @@
                 <a href="/services/fracEYE/" class="button button-transparent button-fullwidth">Learn More About FracEYE</a>
             </div>
             <div class="cards__element cards__element--light cards__element--white">
-                <h4>Services</h4>
-                <h2>DSCVR<i>i</i><sup> SM</sup></h2>
-                <h3>Cloud-Based Completion Evaluation Engine</h3>
-                <p>The DSCVR<i>i</i> cloud-based completion evaluation engine improves completion performance with stage- and well-level data that you sift, sort, and display. These accessible data let you take a deeper dive into your hydraulic fracturing results so you can identify patterns and correlations quickly, enabling you to update the next stimulation plan confidently.</p>
-                <a href="/services/dscvri/" class="button button-transparent button-transparent-cards button-fullwidth">Learn More About DSCVR<i>i</i></a>
-                <a href="/schedule-a-demo/" class="button button-green button-green-cards">Schedule a DSCVR<i>i</i> Demo</a>
+                <h4>SOFTWARE</h4>
+                <h2>ORCHID<sup>*</sup></h2>
+                <h3>Completions Interpretation Platform</h3>
+                <p>ORCHID reduces cost, effort, and resources to empower profitable development decisions 80% faster as the industry’s first commercially available desktop completions interpretation platform purpose-built for integrated diagnostics analysis.</p>
+                <a href="/orchid/" class="button button-transparent button-transparent-cards button-fullwidth">Learn more about ORCHID</a>
+                <a href="/orchid/get-a-demo/" class="button button-green button-green-cards">Schedule an ORCHID Demo</a>
             </div>
         </div>
     </div>
