@@ -30,7 +30,7 @@
                 <li><a href="/resources/technical-papers-articles/">Technical Papers & Articles</a></li>
             </ul>
             <ul>
-                <li><a href="/news/">NEWS & EVENTS</a></li>
+                <li><a href="/news-and-events/">NEWS & EVENTS</a></li>
                 <li><a href="/careers/" class="main">Careers</a></li>
             </ul>
             <ul>

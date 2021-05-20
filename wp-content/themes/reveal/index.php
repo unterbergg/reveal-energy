@@ -6,7 +6,7 @@
         <div class="col col--center">
             <div class="lead__action">
                 <h1>Simple. Accurate. Affordable.</h1>
-                <p>Our award-winning hydraulic fracture measurement services, leveraging patented pressure-based technology, enable you to lower unit cost and accelerate completion performance with minimum operational risk.
+                <p>Our award-winning hydraulic fracture pressure-based measurement services and completions interpretation platform increase operational efficiency without risk in near real time by providing the guidance for enhanced completions decisions.
                 </p>
                 <a href="/services/imagefrac/" class="button button-green">Explore our services</a>
             </div>
@@ -131,7 +131,7 @@
     <div class="container">
         <div class="content-col">
             <h2>News & Events</h2>
-            <a href="/news/"><i class="far fa-angle-right"></i>View All News & Events</a>
+            <a href="/news-and-events/"><i class="far fa-angle-right"></i>View All News & Events</a>
             <div class="content-col__wrapper">
                 <?php
 
