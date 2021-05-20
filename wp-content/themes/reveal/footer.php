@@ -9,11 +9,14 @@
             </ul>
             <ul>
                 <li><a href="/orchid/">ORCHID</a></li>
+                <li><a href="/orchid/get-a-demo/">Get a Demo</a></li>
             </ul>
             <ul>
                 <li><a href="/company/">COMPANY</a></li>
                 <li><a href="/company/leadership/">Leadership</a></li>
                 <li><a href="/patents/">Technology</a></li>
+                <li><a href="/company/website-privacy-policy/">Privacy policy</a></li>
+                <li><a href="/company/terms-and-conditions/">Terms & conditions</a></li>
             </ul>
             <ul>
                 <li class="inactive"><a href="javascript:void(0)" oncontextmenu="return false;">RES-TV</a></li>
@@ -27,7 +30,7 @@
                 <li><a href="/resources/technical-papers-articles/">Technical Papers & Articles</a></li>
             </ul>
             <ul>
-                <li><a href="/news/">NEWS & EVENTS</a></li>
+                <li><a href="/news-and-events/">NEWS & EVENTS</a></li>
                 <li><a href="/careers/" class="main">Careers</a></li>
             </ul>
             <ul>

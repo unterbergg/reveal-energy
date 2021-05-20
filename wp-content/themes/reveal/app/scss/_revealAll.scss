@@ -1028,12 +1028,13 @@
       //background-image: linear-gradient(to bottom, #02205a, #0d2c6c, #17387e, #204591, #2853a5);
       background-position: center;
       background-size: cover;
+      background-color: #2b2b2bb0;
       &::before {
         opacity: 1;
         //background-size: cover;
         //background-image: url('../img/ds_card.png');
         //background-position: center;
-        background-image: url('../img/ds_card.jpg');
+        background-image: url('../img/card_bg_orchid.jpg');
         background-position: center;
         background-size: cover;
         z-index: -1;
@@ -5325,6 +5326,11 @@ a {
   .line {
     border: 1px solid #dedede;
     margin-bottom: 65px;
+  }
+  .form-wrapper{
+    max-width: 1080px;
+    width: 100%;
+    margin: auto;
   }
   .row {
     &--form {

@@ -20,6 +20,7 @@ get_header('nozoom');?>
                         <img src="<?php echo get_template_directory_uri(); ?>/app/img/orchid/colored-logo.svg">
                     </div>
                     <div class="info-wrap">
+                        <h1 class="title"><?php echo get_field('mscrn__title');?></h1>
                         <div class="info">
                             <?php echo get_field('mscrn__text');?>
                         </div>
@@ -67,7 +68,7 @@ get_header('nozoom');?>
                     <?php endif;?>
                     <?php if(get_field('reviews')):?>
                         <div class="b2">
-                        <div class="title">Feedback from our partners</div>
+                        <div class="title"><?php echo get_field('reviews__title');?></div>
                         <div class="reviews-slider-wrap">
                             <div class="reviews-slider">
                                 <?php foreach(get_field('reviews') as $review):?>
@@ -87,7 +88,7 @@ get_header('nozoom');?>
                                                          alt="<?php echo $review['partner']['image']['alt'];?>">
                                                 <?php else:?>
                                                     <!--TODO:ЗАГЛУШКУ-->
-                                                    <img src="https://i.pinimg.com/originals/28/61/41/2861419363eb4a02c2fb0cacbce5f87e.jpg">
+                                                    <img src="<?php echo get_template_directory_uri(); ?>/app/img/orchid/logo.png">
                                                 <?php endif;?>
                                             </div>
                                             <div class="name">
@@ -104,45 +105,42 @@ get_header('nozoom');?>
                         </div>
                     </div>
                     <?php endif;?>
-                    <?php if(get_field('clients__clients')):?>
-                        <div class="b3">
-                        <div class="logo-wrap">
-                            <?php foreach(get_field('clients__clients') as $client):?>
-                                <div class="logo">
-                                    <img src="<?php echo $client['logo']['url'];?>" alt="<?php echo $client['logo']['alt'];
-                                    ?>">
-                                </div>
-                            <?php endforeach;?>
-                        </div>
-                    </div>
-                    <?php endif;?>
-                    <?php if(get_field('get__title') || get_field('get__button') || get_field('get__image')):?>
+                    <?php if(get_field('get__slider')):?>
                         <div class="b4">
-                            <div class="row">
-                                <?php if(get_field('get__title')):?>
+                            <div class="row title-wrapper">
+                                <?php if(get_field('get__section_title')):?>
                                     <div class="text">
-                                        <?php echo get_field('get__title');?>
+                                        <?php echo get_field('get__section_title');?>
                                     </div>
-                                <?php endif; ?>
-                                <?php if(get_field('get__button')):?>
-                                    <a class="button" href="<?php echo get_field('get__button')['link'];?>">
-                                        <?php echo get_field('get__button')['text'];?>
-                                    </a>
                                 <?php endif; ?>
                             </div>
-                            <?php if(get_field('get__image')):?>
-                                <div class="row">
-                                    <div class="img">
-                                        <img src="<?php echo get_field('get__image')['url'];?>"
-                                             alt="<?php echo get_field('get__image')['alt'];?>"
-                                        />
-                                    </div>
+                            <div class="slider-wrapper">
+                                <div class="get-slider">
+                                    <?php foreach(get_field('get__slider') as $slide):?>
+                                        <div class="slide">
+                                            <div class="row info">
+                                                <div class="text"><?php echo $slide['title'];?></div>
+                                                <a class="button" href="<?php echo $slide['button']['link'];?>">
+                                                    <?php echo $slide['button']['text'];?>
+                                                </a>
+                                            </div>
+                                            <div class="row">
+                                                <div class="img">
+                                                    <img src="<?php echo $slide['image']['url'];?>"
+                                                         alt="<?php echo $slide['image']['alt'];?>"
+                                                    />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    <?php endforeach;?>
                                 </div>
-                            <?php endif; ?>
+                                <div class="get-arrow"></div>
+                            </div>
                         </div>
                     <?php endif;?>
-                    <div class="b5">
-                        <?php if(get_field('vblock__video')['poster'] && get_field('vblock__video')['link'] &&
+                    <?php if(get_field('information_blocks')):?>
+                        <div class="b5">
+                            <?php /* if(get_field('vblock__video')['poster'] && get_field('vblock__video')['link'] &&
                             get_field('vblock__video')['title'] && get_field('vblock__video')['description']):?>
                             <div class="video-wrap">
                                 <div class="container dscvriv-vidio">
@@ -159,23 +157,23 @@ get_header('nozoom');?>
                                     </div>
                                 </div>
                             </div>
-                        <?php endif;?>
-                        <?php if(get_field('vblock__title') || get_field('vblock__text')):?>
-                            <div class="info-wrap">
-                                <div class="title">
-                                    <?php echo get_field('vblock__title');?>
+                        <?php endif;*/?>
+                            <?php foreach(get_field('information_blocks') as $information):?>
+                                <div class="block">
+                                    <div class="image-wrap">
+                                        <img src="<?php echo $information['image']['url'];?>"
+                                             alt="<?php echo $information['image']['alt'];?>">
+                                    </div>
+                                    <div class="info-wrap">
+                                        <div class="title">
+                                            <?php echo $information['title'];?>
+                                        </div>
+                                        <?php echo $information['text'];?>
+                                    </div>
                                 </div>
-                                <?php echo get_field('vblock__text');?>
-    <!--                            <ol class="text-wrap">-->
-    <!--                                <li>Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus.</li>-->
-    <!--                                <li>Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue.</li>-->
-    <!--                                <li>Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum.</li>-->
-    <!--                                <li>Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna.</li>-->
-    <!--                            </ol>-->
-                            </div>
-                        <?php endif;?>
-                    </div>
-                    <!-- TODO: Заменить BUTTON проверку-->
+                            <?php endforeach;?>
+                        </div>
+                    <?php endif;?>
                     <?php if(get_field('orchiddemo__text') || (get_field('orchiddemo__button')['text'] &&
                             get_field('orchiddemo__button')['link'])):?>
                         <div class="b6">
@@ -211,10 +209,16 @@ get_header('nozoom');?>
                             </div>
                         </div>
                     <?php endif;?>
+                    <?php if(get_field('contact__iframe')):?>
+                    <div class="b8">
+                        <div class="title"><?php echo get_field('contact__title');?></div>
+                        <?php echo get_field('contact__iframe');?>
+                    </div>
+                    <?php endif;?>
                 </div>
             </div>
         </section>
-        <section class="connect">
+        <!--<section class="connect">
             <div class="container">
                 <div class="col">
                     <h2 class="margin-bottom">How can we help?</h2>
@@ -267,7 +271,7 @@ get_header('nozoom');?>
                     </form>
                 </div>
             </div>
-        </section>
+        </section>-->
     </div>
 
     <script>

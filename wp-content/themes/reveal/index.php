@@ -6,7 +6,7 @@
         <div class="col col--center">
             <div class="lead__action">
                 <h1>Simple. Accurate. Affordable.</h1>
-                <p>Our award-winning hydraulic fracture measurement services, leveraging patented pressure-based technology, enable you to lower unit cost and accelerate completion performance with minimum operational risk.
+                <p>Our award-winning hydraulic fracture pressure-based measurement services and completions interpretation platform increase operational efficiency without risk in near real time by providing the guidance for enhanced completions decisions.
                 </p>
                 <a href="/services/imagefrac/" class="button button-green">Explore our services</a>
             </div>
@@ -84,12 +84,12 @@
                 <a href="/services/fracEYE/" class="button button-transparent button-fullwidth">Learn More About FracEYE</a>
             </div>
             <div class="cards__element cards__element--light cards__element--white">
-                <h4>Services</h4>
-                <h2>DSCVR<i>i</i><sup> SM</sup></h2>
-                <h3>Cloud-Based Completion Evaluation Engine</h3>
-                <p>The DSCVR<i>i</i> cloud-based completion evaluation engine improves completion performance with stage- and well-level data that you sift, sort, and display. These accessible data let you take a deeper dive into your hydraulic fracturing results so you can identify patterns and correlations quickly, enabling you to update the next stimulation plan confidently.</p>
-                <a href="/services/dscvri/" class="button button-transparent button-transparent-cards button-fullwidth">Learn More About DSCVR<i>i</i></a>
-                <a href="/schedule-a-demo/" class="button button-green button-green-cards">Schedule a DSCVR<i>i</i> Demo</a>
+                <h4>SOFTWARE</h4>
+                <h2>ORCHID<sup>*</sup></h2>
+                <h3>Completions Interpretation Platform</h3>
+                <p>ORCHID reduces cost, effort, and resources to empower profitable development decisions 80% faster as the industry’s first commercially available desktop completions interpretation platform purpose-built for integrated diagnostics analysis.</p>
+                <a href="/orchid/" class="button button-transparent button-transparent-cards button-fullwidth">Learn more about ORCHID</a>
+                <a href="/orchid/get-a-demo/" class="button button-green button-green-cards">Schedule an ORCHID Demo</a>
             </div>
         </div>
     </div>
@@ -131,7 +131,7 @@
     <div class="container">
         <div class="content-col">
             <h2>News & Events</h2>
-            <a href="/news/"><i class="far fa-angle-right"></i>View All News & Events</a>
+            <a href="/news-and-events/"><i class="far fa-angle-right"></i>View All News & Events</a>
             <div class="content-col__wrapper">
                 <?php
 

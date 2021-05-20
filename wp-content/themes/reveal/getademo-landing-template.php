@@ -1,12 +1,11 @@
 <?php
 /**
-* Template Name: Content Landing Page
+* Template Name: Get a Demo Page
  */
 
 get_header('landing');?>
 
 
-<!-- TODO: Заменить BUTTON проверку-->
 <div class="landing-page">
     <section id="landing-s1" class="landing-page-info">
         <div class="container">
@@ -20,15 +19,6 @@ get_header('landing');?>
                             <?php echo get_field('mscrn__description');?>
                         </div>
                     </div>
-                    <?php if(get_field('mscrn__points')):?>
-                        <div class="list">
-                            <?php foreach (get_field('mscrn__points') as $item):?>
-                                <div class="item">
-                                    <?php echo $item['text'];?>
-                                </div>
-                            <?php endforeach;?>
-                        </div>
-                    <?php endif;?>
                 </div>
                 <div class="form-wrap">
                     <div class="title"><?php echo get_field('mscrn__form_title');?></div>
@@ -66,38 +56,6 @@ get_header('landing');?>
             </a>
         </div>
     </section>
-
-
-    <?php if(get_field('covered__items')): ?>
-        <section id="landing-s3" class="landing-page-icons">
-            <div class="container">
-                <div class="row">
-                    <div class="text">
-                        <?php echo get_field('covered__title');?>
-                    </div>
-                </div>
-                <div class="icons-wrapper">
-                    <?php foreach(get_field('covered__items') as $item): ?>
-                        <div class="item">
-                            <div class="icon">
-                                <?php if($item['image']): ?>
-                                    <img src="<?php echo $item['image']['url'];?>"
-                                         alt="<?php echo $item['image']['alt'];?>"
-                                    />
-                                <?php else: ?>
-                                    <img src="<?php echo get_template_directory_uri();?>/app/img/content-landing-page/AccessIcon.png"
-                                         alt=""
-                                    />
-                                <?php endif; ?>
-                            </div>
-                            <div class="title"><?php echo $item['title'];?></div>
-                            <div class="text"><?php echo $item['text'];?></div>
-                        </div>
-                    <?php endforeach;?>
-                </div>
-            </div>
-        </section>
-    <?php endif;?>
     <?php if(get_field('reviews')): ?>
         <section id="landing-s4" class="landing-page-reviews">
             <div class="container">
@@ -122,7 +80,6 @@ get_header('landing');?>
                                             <img src="<?php echo $review['partner']['image']['url'];?>"
                                                  alt="<?php echo $review['partner']['image']['alt'];?>">
                                         <?php else:?>
-                                            <!--TODO:ЗАГЛУШКУ-->
                                             <img src="<?php echo get_template_directory_uri(); ?>/app/img/orchid/logo2.png">
                                         <?php endif;?>
                                     </div>
@@ -141,40 +98,26 @@ get_header('landing');?>
             </div>
         </section>
     <?php endif; ?>
-    <?php if(get_field('get__title') || get_field('get__button') || get_field('get__image')): ?>
-        <section id="landing-s5" class="landing-page-demo">
-            <div class="container">
-                <div class="row title-wrap">
-                    <?php if(get_field('get__title')):?>
-                        <div class="title">
-                            <?php echo get_field('get__title');?>
+    <?php if(get_field('information_blocks')):?>
+        <div class="b5">
+            <?php foreach(get_field('information_blocks') as $information):?>
+                <div class="block">
+                    <div class="info-wrapper container">
+                        <div class="image-wrap">
+                            <img src="<?php echo $information['image']['url'];?>"
+                                 alt="<?php echo $information['image']['alt'];?>">
                         </div>
-                    <?php endif; ?>
-                </div>
-                <div class="row">
-                    <?php if(get_field('get__text')):?>
-                        <div class="text">
-                            <?php echo get_field('get__text');?>
-                        </div>
-                    <?php endif; ?>
-                    <?php if(get_field('get__button')):?>
-                        <a class="button" href="<?php echo get_field('get__button')['link'];?>">
-                            <?php echo get_field('get__button')['text'];?>
-                        </a>
-                    <?php endif; ?>
-                </div>
-                <?php if(get_field('get__image')):?>
-                    <div class="row">
-                        <div class="img">
-                            <img src="<?php echo get_field('get__image')['url'];?>"
-                                 alt="<?php echo get_field('get__image')['alt'];?>"
-                            />
+                        <div class="info-wrap">
+                            <div class="title">
+                                <?php echo $information['title'];?>
+                            </div>
+                            <?php echo $information['text'];?>
                         </div>
                     </div>
-                <?php endif; ?>
-            </div>
-        </section>
-    <?php endif; ?>
-</div>
+                </div>
+            <?php endforeach;?>
+        </div>
+    <?php endif;?>
+
 
 <?php get_footer('landing'); ?>

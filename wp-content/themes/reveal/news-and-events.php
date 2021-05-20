@@ -46,7 +46,7 @@ get_header(); ?>
                 </div>
                 <?php
             }
-            picanties_pagination( );
+
             ?>
             </div>
         <?php

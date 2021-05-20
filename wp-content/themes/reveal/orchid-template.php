@@ -17,7 +17,7 @@ get_header();?>
             <div class="logo"><img src="<?php echo get_template_directory_uri(); ?>/app/img/orchid/colored-logo.svg"></div>
             <div class="info-wrap">
                 <div class="info">Open interpretation platform that supports improved decision-making for unconventional wells</div>
-                <a class="button" href="/contact/"><span>Interested in ORCHID?</span><br>Contact Us to get registered for the beta program.</a>
+                <a class="button" href="/contact/"><span>Interested in ORCHID?</span><br>Contact us to set up a demo.</a>
             </div>
         </div>
     </div>
@@ -61,7 +61,7 @@ get_header();?>
                     <div class="list">
                         <div class="text min-padding">Data fusion links multiple data sources and cross-references them to create an integrated structure that lets me uncover trends and relationships that are not present in the primary data sources on their own. Data fusion is extremely important because we know that the most valuable lessons can be retrieved at the intersection of data sources.</div>
                         <div class="text no-padding">The Orchid platform is reducing NPT to ensure that we withstand the multitude of disruptors that are reshaping the industry. I’m working considerably faster and more efficiently to ensure economics-driven well completions. </div>
-                        <a class="button" href="/contact/"><span>Interested in ORCHID?</span><br>Contact Us to get registered for the beta program.</a>
+                        <a class="button" href="/contact/"><span>Interested in ORCHID?</span><br>Contact us to set up a demo.</a>
                     </div>
                     <div class="img"><img src="<?php echo get_template_directory_uri(); ?>/app/img/orchid/img4.png"></div>
                 </div>
