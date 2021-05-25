@@ -37,7 +37,7 @@ get_header('nozoom');?>
             </div>
             <div class="container">
                 <div class="row mark-wrap">
-                    <div class="min-text"><img src="<?php echo get_template_directory_uri(); ?>/app/img/orchid/123.svg"> Mark of Reveal Energy Services</div>
+                    <!--<div class="min-text"><img src="<?php /*echo get_template_directory_uri(); */?>/app/img/orchid/123.svg"> Mark of Reveal Energy Services</div>-->
                     <div class="logo-wrap"><img class="img" src="<?php echo get_template_directory_uri();?>/app/img/content-landing-page/oil-logo.png"></div>
                 </div>
             </div>
