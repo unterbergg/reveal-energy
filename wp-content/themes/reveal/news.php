@@ -17,6 +17,7 @@ get_header();?>
                 <div class="page-info__text page-info__text--frac">
                     <h1>News & Events</h1>
                     <p>A closer look at Reveal Energy Services</p>
+                    <a href="/contact/" class="button button-green">Get in Touch</a>
                 </div>
                 <a href="/res-tv/customer-experience/" class="page-info__suggestion page-info__suggestion--frac page-info__suggestion--video">
                     <div class="page-info__suggestion__preview gallery">

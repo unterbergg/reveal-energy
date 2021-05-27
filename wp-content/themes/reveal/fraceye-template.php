@@ -18,6 +18,7 @@ get_header();?>
             <div class="page-info__text page-info__text--frac">
                 <h1>FracEYE</h1>
                 <p>Frac Hit Analysis Service</p>
+                <a href="/contact/" class="button button-green">Get in Touch</a>
             </div>
             <div class="wrapper">
                 <a href="services/dscvri/" class="service__element service__element--color-0 service__element--block">

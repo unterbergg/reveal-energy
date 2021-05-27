@@ -282,6 +282,31 @@
               opacity: 1;
             }
           }
+          &.getintouch{
+            a{
+              background: #b8de1c;
+              padding: 16px 22px;
+              font-weight: 500;
+              line-height: 16px;
+              color: #2b2b2b;
+              -webkit-border-radius: 4px;
+              border-radius: 4px;
+              -webkit-transition: all .3s;
+              -o-transition: all .3s;
+              transition: all .3s;
+              opacity: 1;
+              @media (max-width: 1024px) {
+
+              }
+              &:hover{
+                background: #c02791;
+                color: #fff;
+              }
+              &::after{
+                content: none;
+              }
+            }
+          }
         }
       }
     }
@@ -1937,6 +1962,7 @@ a {
       font-size: 1.25em;
       line-height: 30px;
       margin: 0;
+      margin-bottom: 45px;
       @media (max-width: 768px) {
         font-size: 1em;
         font-weight: 300;

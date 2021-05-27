@@ -18,6 +18,7 @@ get_header();?>
             <div class="page-info__text page-info__text--frac">
                 <h1>IMAGE Frac<sup>TM</sup></h1>
                 <p>Pressure-Based Fracture Maps</p>
+                <a href="/contact/" class="button button-green">Get in Touch</a>
             </div>
             <div class="wrapper">
                 <a href="services/dscvri/" class="service__element service__element--color-0 service__element--block">

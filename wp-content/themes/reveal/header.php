@@ -148,7 +148,7 @@
                         <ul>
                             <li class="<?php echo $parentPage == 'news-and-events' ? 'top-active' : ''; echo $currentPageType == 'news' ? 'top-active' : '';?>"><a href="/news-and-events/">News & Events</a></li>
                             <li class="<?php echo $parentPage == 'careers' ? 'top-active' : ''?>"><a href="/company/careers/">Careers</a></li>
-                            <li class="<?php echo $parentPage == 'contact' ? 'top-active' : '';?>"><a href="/contact/ ">Contact</a></li>
+                            <li class="getintouch <?php echo $parentPage == 'contact' ? 'top-active' : '';?>"><a href="/contact/ ">Get in Touch</a></li>
                             <li class="menu-search-item <?php echo $parentPage == 'search' ? 'top-active' : '';?>"><a href="javascript: void(0)"> <i class="far fa-search"></i></a></li>
                         </ul>
                     </nav>

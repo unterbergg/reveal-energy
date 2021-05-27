@@ -110,7 +110,7 @@
                 <a href="/"><img src="<?php echo get_template_directory_uri(); ?>/app/img/logo.svg" alt=""></a>
             </div>
             <div class="header__content">
-                <a class="button" href="/contact/">Contact Us</a>
+                <a class="button" href="/contact/">Get in Touch</a>
             </div>
         </div>
     </div>
