@@ -18,6 +18,7 @@ get_header();?>
             <div class="page-info__text">
                 <h1>Company</h1>
                 <p>Reveal Energy Services is a Houston-based oil & gas services company working on revolutionizing fracture diagnostics methods through innovative engineering.</p>
+                <a href="/contact/" class="button button-green">Get in Touch</a>
             </div>
             <a href="https://www.epmag.com/2018-meritorious-awards-engineering-innovation-1697656#p=full" target="_blank" class="page-info__suggestion page-info__suggestion--link">
                 <div class="page-info__suggestion__image">

@@ -8,7 +8,7 @@
                 <h1>Simple. Accurate. Affordable.</h1>
                 <p>Our award-winning hydraulic fracture pressure-based measurement services and completions interpretation platform increase operational efficiency without risk in near real time by providing the guidance for enhanced completions decisions.
                 </p>
-                <a href="/services/imagefrac/" class="button button-green">Explore our services</a>
+                <a href="/contact/" class="button button-green">Get in Touch</a>
             </div>
             <div class="lead__common">
                 <div class="lead__common__item lead__common__item-first">

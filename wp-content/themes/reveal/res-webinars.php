@@ -18,6 +18,7 @@ get_header(); ?>
             <div class="page-info__text page-info__text--frac">
                 <h1>Webinars</h1>
                 <p>Hear from the Drivers of Innovation</p>
+                <a href="/contact/" class="button button-green">Get in Touch</a>
             </div>
             <a href="/technology/imagefrac/" class="page-info__suggestion page-info__suggestion--res page-info__suggestion--video">
                 <div class="page-info__suggestion__preview">

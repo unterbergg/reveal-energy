@@ -17,6 +17,7 @@ get_header(); ?>
             <div class="page-info__text page-info__text--frac">
                 <h1>RES-TV</h1>
                 <p>Tune in to Reveal Energy Services TV to learn how we can solve your completion design challenges with our award-winning technology.</p>
+                <a href="/contact/" class="button button-green">Get in Touch</a>
             </div>
             <a href="/technology/imagefrac/" class="page-info__suggestion page-info__suggestion--res page-info__suggestion--video">
                 <div class="page-info__suggestion__preview">

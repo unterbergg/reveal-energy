@@ -196,7 +196,7 @@ get_header();?>
                 <div class="benefits__card benefits__card--last">
                     <h3>Ask us how</h3>
                     <p>Speak to our sales representative to find out how we can benefit your business.</p>
-                    <a href="/contact/" class="button button-benefits">Contact us</a>
+                    <a href="/contact/" class="button button-benefits">Get in Touch</a>
                 </div>
 
             </div>
